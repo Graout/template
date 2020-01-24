@@ -3,6 +3,7 @@ const path = require("path");
 const isDev = require("electron-is-dev");
 
 let win;
+
 const mainMenuTemplate = [];
 function createWindow() {
     // Create the browser window.
@@ -11,7 +12,7 @@ function createWindow() {
         minHeight: 600,
         resizable: true,
         show: false,
-        frame: true,
+        frame: false,
         webPreferences: {
             nodeIntegration: true,
             webSecurity: false
