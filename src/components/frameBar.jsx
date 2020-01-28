@@ -20,7 +20,11 @@ const maxiMize = () => {
 export default function frameBar() {
     return (
         <div className="frame-bar">
-            <div></div>
+            <ul className="menu">
+                <li className="burger">
+                    <p>&#xE700;</p>
+                </li>
+            </ul>
             <ul className="frame-bar-buttons">
                 <li className="min-btn" onClick={miniMize}>
                     <p>&#xE921;</p>

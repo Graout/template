@@ -23,6 +23,41 @@ body {
     width: 100%;
     z-index: 1;
     height: 30px;
+    background: #111;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+}
+
+.menu {
+    -webkit-app-region: no-drag;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    list-style: none;
+}
+
+.menu li {
+    padding-top: 6px;
+    -webkit-app-region: no-drag;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+}
+
+.burger {
+    width: 50px;
+}
+
+.Home,
+.Library {
+    width: 80px;
+}
+
+.Library:hover,
+.burger:hover,
+.Home:hover {
+    background: #ffffff2c;
 }
 
 .frame-bar-buttons {
@@ -34,12 +69,8 @@ body {
     height: 30px;
 }
 
-.frame-bar-buttons li p {
-    padding-top: 2px;
-}
-
 .frame-bar-buttons li {
-    padding: 6px;
+    padding-top: 6px;
     -webkit-app-region: no-drag;
     color: #ffffff;
     text-decoration: none;
@@ -49,14 +80,17 @@ body {
     text-align: center;
     width: 100px;
 }
+.frame-bar-buttons li p {
+    padding-top: 2px;
+}
 .min-btn:hover,
 .max-btn:hover {
     background: #ffffff2c;
 }
 
 .quit-btn:hover {
-    background: #ffffff2c;
-    color: red;
+    background: red;
+    color: white;
 }
 
 /*************       framebar              *************/
@@ -75,15 +109,14 @@ body {
 
 .container-main .wrapper {
     background: #1d1d1d;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
     overflow-y: auto;
+    margin-top: 30px;
 }
 
-.draggable {
-    width: 400px;
-    height: 300px;
-    border-radius: 5px;
-    background: #111;
-}
+/*************       wrapper-main              *************/
 
 /*************          webkit styles           *************/
 
@@ -93,7 +126,6 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    margin-top: 30px;
     background: #1d1d1d;
 }
 
