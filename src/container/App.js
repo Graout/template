@@ -1,5 +1,5 @@
 import React from "react";
-import Main from "./components/main";
+import Main from "../components/pages/main";
 import FrameBar from "../components/frameBar";
 import "./App.css";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
